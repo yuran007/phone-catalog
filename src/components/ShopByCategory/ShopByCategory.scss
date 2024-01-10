@@ -1,0 +1,11 @@
+@import "../../styles/utils/";
+
+.ShopByCategory {
+  &-Title {
+    margin: 0 0 24px;
+  }
+
+  &-Content {
+    @include pageGrid;
+  }
+}

@@ -1,0 +1,59 @@
+@import "../../styles/utils/";
+
+.Slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &-Content {
+    margin-block-end: 8px;
+
+    @include pageGrid;
+  }
+
+  &-Icon {
+    grid-column: span 1;
+
+    height: 100%;
+  }
+
+  &-Window {
+    grid-column: span 22;
+
+    overflow: hidden;
+  }
+
+  &-Slides {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+
+    transition: transform $transition-duration;
+  }
+
+  &-Dots {
+    margin: 0;
+    padding-block: 10px;
+    padding-inline: 0;
+    list-style: none;
+
+    display: flex;
+    grid-column-gap: 21px;
+  }
+
+  &-Dot {
+    display: block;
+    height: 4px;
+    width: 14px;
+
+    background-color: $element;
+
+    cursor: pointer;
+
+    &_active {
+      background-color: $primary;
+    }
+  }
+}

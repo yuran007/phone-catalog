@@ -1,0 +1,42 @@
+@import "../../styles/utils/";
+
+.ProductsSlider {
+  &-Top {
+    margin-block-end: 24px;
+
+    @include pageGrid;
+  }
+
+  &-Title {
+    grid-column: 1/23;
+
+    margin: 0;
+  }
+
+  &-Icon {
+    grid-column: span 1;
+  }
+
+  &-Window {
+    overflow-x: hidden;
+  }
+
+  &-Slides {
+    display: flex;
+    gap: 0 16px;
+
+    transition: transform $transition-duration,
+      filter $transition-duration;
+
+    overflow: hidden;
+
+    & > .ProductCard {
+      max-width: 272px;
+    }
+
+    &:hover > .ProductCard:not(:hover) {
+      transform: scale(1.05, 1,05);
+      filter: blur(6px);
+    }
+  }
+}

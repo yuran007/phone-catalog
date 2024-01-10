@@ -1,0 +1,47 @@
+@import "../../styles/utils/";
+
+.Category {
+  grid-column: span 8;
+
+  transition: transform $transition-duration,
+    filter $transition-duration;
+
+  &:hover {
+    transform: scaleY($scale-factor);
+    filter: brightness(0.7);
+  }
+
+  &-Container {
+    margin-block-end: 24px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 24px 0;
+
+    &_mobile {
+      background-color: #f8dbc1;
+    }
+
+    &_tablet {
+      background-color: #8d8d92;
+    }
+
+    &_accessory {
+      background-color: #973d5f;
+    }
+  }
+
+  &-Link {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  &-Title {
+    margin: 0 0 4px;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.3;
+  }
+}

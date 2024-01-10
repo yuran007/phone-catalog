@@ -1,0 +1,38 @@
+@import "../../styles/utils/";
+
+.Button {
+  padding: 0;
+  height: 40px;
+  width: 176px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font: inherit;
+  font-weight: 600;
+
+  color: $white;
+
+  background-color: $primary;
+
+  border: none;
+
+  box-shadow: 0 3px 13px 0 transparent;
+
+  transition: box-shadow $transition-duration;
+
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 3px 13px 0 #17203142;
+  }
+
+  &_in_cart {
+    color: $green;
+
+    background-color: $white;
+
+    border: 1px solid $element;
+  }
+}

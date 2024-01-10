@@ -1,0 +1,59 @@
+.Page {
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  &-Body {
+    margin: 0;
+    font: normal 500 14px/1.5 "Mont", sans-serif;
+
+    color: $primary;
+
+    background-color: $white;
+  }
+
+  &-Root {
+    min-height: 100vh;
+
+    display: grid;
+    grid-template-rows: min-content 1fr min-content;
+  }
+
+  &-Products {
+    padding-block-start: 40px;
+  }
+
+  &-Slider {
+    padding-block-start: 40px;
+    margin-block-end: 72px;
+  }
+
+  &-ProductDetail,
+  &-HotPrice,
+  &-ShopByCategory,
+  &-BrandNew {
+    margin-block-end: 80px;
+  }
+
+  &-SectionTitle {
+    margin-block: 0;
+  }
+
+  &-NoResults {
+    margin-block-end: 40px;
+  }
+
+  &-ProductListFilter {
+    margin-block-end: 24px;
+  }
+
+  &-Breadcrumbs {
+    margin-block-end: 40px;
+  }
+
+  &-BackButton {
+    margin-block-end: 16px;
+  }
+}

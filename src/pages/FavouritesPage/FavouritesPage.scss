@@ -1,0 +1,14 @@
+@import "../../styles/utils/";
+
+.Favourites {
+  padding-block-start: 24px;
+  padding-block-end: 80px;
+
+  &-Title {
+    margin: 0 0 8px;
+  }
+
+  &-Total {
+    margin-block-end: 40px;
+  }
+}

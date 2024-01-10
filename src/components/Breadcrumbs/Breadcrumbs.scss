@@ -1,0 +1,69 @@
+@import "../../styles/utils/";
+
+.Breadcrumbs {
+  &-List {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+  }
+
+  &-Item {
+    position: relative;
+    height: 16px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: $primary;
+
+    &:last-child {
+      color: $secondary;
+    }
+
+    &:not(:last-child)::after {
+      content: "";
+
+      position: absolute;
+      top: 50%;
+      left: 100%;
+      transform: translateY(-50%);
+
+      display: block;
+      margin-left: 8px;
+      height: 16px;
+      width: 16px;
+
+      background: no-repeat center url("../../images/icons/arrow-right-disabled.svg");
+    }
+  }
+
+  &-Link {
+    display: block;
+
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1;
+
+    text-decoration: none;
+    color: $primary;
+
+    cursor: pointer;
+  }
+
+  &-Icon {
+    --icon-size: 16px;
+
+    font-size: 12px;
+    font-weight: 600;
+    text-decoration: none;
+
+    color: inherit;
+
+    border: none;
+  }
+}

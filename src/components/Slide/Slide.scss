@@ -1,0 +1,24 @@
+@import "../../styles/utils/";
+
+.Slide {
+
+  &-Link {
+    display: flex;
+    text-decoration: none;
+
+    transition: transform $transition-duration,
+      filter $transition-duration;
+
+    &:hover {
+      transform: scale($scale-factor);
+      filter: brightness(0.9);
+    }
+  }
+
+  &-Image {
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+  }
+}

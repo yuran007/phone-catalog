@@ -1,0 +1,279 @@
+@import "../../styles/utils/";
+
+.ProductDetail {
+  padding-block-start: 24px;
+
+  &-Title {
+    margin: 0 0 40px;
+  }
+
+  &-Content {
+    margin-block-end: 80px;
+
+    @include pageGrid;
+  }
+
+  &-ImagesContainer {
+    grid-column: span 2;
+  }
+
+  &-ImgList {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    flex-direction: column;
+    grid-row-gap: 16px;
+  }
+
+  &-ListItem {
+    --size: 80px;
+    height: var(--size);
+    width: var(--size);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-ImgButton {
+    padding: 0;
+
+    display: block;
+
+    border: 1px solid $element;
+
+    background: none;
+
+    cursor: pointer;
+
+    transition: border-color $transition-duration;
+
+    &:hover {
+      border-color: $icon-placeholder;
+    }
+
+    &_active {
+      border-color: #313237;
+    }
+  }
+
+  &-ImgSmall {
+    display: block;
+    block-size: auto;
+    inline-size: 100%;
+
+    max-inline-size: 100%;
+  }
+
+  &-Img {
+    grid-column: span 10;
+
+    display: block;
+    block-size: auto;
+    inline-size: 100%;
+
+    object-fit: cover;
+    max-inline-size: 100%;
+  }
+
+  &-Right {
+    grid-column: 14/21;
+  }
+
+  &-Colors {
+    margin-bottom: 24px;
+  }
+
+  &-SelectLabel {
+    margin-block-end: 16px;
+
+    font-size: 12px;
+    font-weight: 600;
+
+    color: $secondary;
+  }
+
+  &-SelectList {
+    margin: 0 0 24px;
+    padding: 0;
+    list-style: none;
+
+    display: flex;
+    gap: 0 8px;
+  }
+
+  &-ColorButton {
+    padding: 0;
+
+    width: 32px;
+    height: 32px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+
+    border-radius: 50%;
+
+    border: 1px solid $element;
+
+    cursor: pointer;
+
+    transition: border-color $transition-duration;
+
+    &:hover {
+      border-color: $icon-placeholder;
+    }
+
+    &_active {
+      border-color: $primary;
+    }
+  }
+
+  &-ColorCircle {
+    display: block;
+    height: 28px;
+    width: 28px;
+
+    border-radius: 50%;
+  }
+
+  &-Break {
+    margin-block: 0;
+
+    border-top: 0;
+  }
+
+  &-Capacities {
+    margin-bottom: 32px;
+  }
+
+  &-CapacityButton {
+    padding: 7px 8px 4px;
+
+    height: 32px;
+
+    text-align: center;
+
+    background-color: transparent;
+
+    border: 1px solid $element;
+
+    cursor: pointer;
+
+    transition: background-color $transition-duration,
+      color $transition-duration,
+      border-color $transition-duration;
+
+    &:hover {
+      border-color: $primary;
+    }
+
+    &_active {
+      color: $white;
+      background-color: $primary;
+      border-color: $primary;
+    }
+  }
+
+  &-Prices {
+    margin-block-end: 16px;
+
+    display: flex;
+    align-items: center;
+    grid-gap: 0 8px;
+  }
+
+  &-DiscountPrice {
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  &-Price {
+    font-size: 22px;
+    line-height: normal;
+    text-decoration: line-through;
+
+    color: $secondary;
+  }
+
+  &-Buttons {
+    margin-block-end: 32px;
+
+    display: flex;
+    align-items: center;
+    gap: 0 8px;
+  }
+
+  &-Button {
+    width: 263px;
+    height: 48px;
+  }
+
+  &-Icon {
+    --icon-size: 48px;
+    padding: 0;
+  }
+
+  &-Spec {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &-Label {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: start;
+
+    color: $secondary;
+  }
+
+  &-Value {
+    font-size: 12px;
+    font-weight: 600;
+    text-align: end;
+  }
+
+  &-ContentBottom {
+    @include pageGrid;
+  }
+
+  &-About {
+    grid-column: 1/13;
+  }
+
+  &-Info {
+    margin-block-end: 32px;
+  }
+
+  &-SubTitle {
+    margin-block-end: 16px;
+    display: block;
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+
+    color: $primary;
+  }
+
+  &-Tech {
+    grid-column: 14/-1;
+  }
+
+  &-TechSpec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  &-TechLabel {
+    margin-block-end: 8px;
+
+    color: $secondary;
+  }
+}

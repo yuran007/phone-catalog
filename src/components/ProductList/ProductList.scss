@@ -1,0 +1,15 @@
+@import "../../styles/utils/";
+
+.ProductList {
+  @include pageGrid;
+  row-gap: 40px;
+
+  & > .ProductCard {
+    grid-column: span 6;
+  }
+
+  &:hover > .ProductCard:not(:hover) {
+    filter: blur(6px);
+    transform: scale(1.05, 1,05);
+  }
+}

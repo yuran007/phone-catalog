@@ -1,0 +1,87 @@
+@import "../../styles/utils/";
+
+.CartItem {
+  padding-block: 23px;
+  padding-inline: 24px 40px;
+
+  border: 1px solid $element;
+
+  display: grid;
+  grid-template-columns: min-content 1fr;
+
+  &-Left {
+    display: flex;
+    align-items: center;
+    column-gap: 24px;
+  }
+
+  &-Right {
+    display: grid;
+    grid-template-columns: min-content 1fr;
+    align-items: center;
+  }
+
+  &-IconDelete {
+    --icon-size: 16px;
+    padding: 0;
+    border: none;
+
+    cursor: pointer;
+  }
+
+  &-LinkImage {
+    --size: 80px;
+    width: var(--size);
+    height: var(--size);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+
+    text-decoration: none;
+  }
+
+  &-Image {
+    object-fit: cover;
+    object-position: center;
+  }
+
+  &-LinkTitle {
+    text-decoration: none;
+
+    color: $primary;
+  }
+
+  &-CartTitle {
+    margin-block: 0;
+    width: 295px;
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    color: $primary;
+  }
+
+  &-Counter {
+    display: flex;
+    align-items: center;
+    column-gap: 13px;
+  }
+
+  &-Icon {
+    cursor: pointer;
+  }
+
+  &-Price {
+    justify-self: end;
+
+    font-size: 22px;
+    font-weight: 700;
+    line-height: 1.4;
+
+    color: $primary;
+  }
+}
