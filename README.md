@@ -15,4 +15,4 @@ In this project I have learned how to transform design into application, use cli
 
 ## Useful links:
 - [DEMO](https://yuran007.github.io/phone-catalog/)
-- [Figma design]((https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign?node-id=1%3A2))
+- [Figma design](https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign?node-id=1%3A2)
