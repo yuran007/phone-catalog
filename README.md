@@ -1,9 +1,18 @@
-# React TypeScript Starter Pack
+# Phone catalog project
 
-To use this template click `Use this template`
+This is a Phone catalog react application.
 
-### Available Scripts
+In this project I have learned how to transform design into application, use client side routing and store data with Redux Toolkit.
 
-`Deploy` - available to deploy your application to gh-pages
+## I developed this project using:
+- React
+- TypeScript
+- React Router
+- Redux Toolkit
+- HTML
+- CSS
+- SASS
 
-`SCSS Preprocessor` - available to write your styles with modern style language
+## Useful links:
+- [DEMO](https://yuran007.github.io/phone-catalog/)
+- [Figma design]((https://www.figma.com/file/uEetgWenSRxk9jgiym6Yzp/Phone-catalog-redesign?node-id=1%3A2))
